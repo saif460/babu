@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Shopping</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Online Shopping</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#cart">Cart</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container1">
+      <h2>Welcome to Our Online Store</h2>
+      <p>Shop the latest trends at unbeatable prices.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <div class="container">
+      <h2>Our Products</h2>
+      <div class="filters">
+        <input type="text" id="search" placeholder="Search products...">
+        <select id="category">
+          <option value="all">All Categories</option>
+          <option value="electronics">Electronics</option>
+          <option value="clothing">Clothing</option>
+          <option value="accessories">Accessories</option>
+        </select>
+      </div>
+      <div class="product-list" id="productList">
+       
+        <!-- Products will be dynamically loaded here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section id="cart" class="cart">
+    <div class="container">
+      <h2>Your Cart</h2>
+      <div class="cart-items" id="cartItems">
+        <!-- Cart items will be dynamically loaded here -->
+      
+      </div>
+      <button id="checkout" class="btn">Checkout with PayPal</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Online Shopping. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- App Install Prompt -->
+  <div id="installPrompt" class="install-prompt">
+    <p>Install our app for a better experience!</p>
+    <button id="installButton">Install</button>
+    <button id="closePrompt">Close</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
